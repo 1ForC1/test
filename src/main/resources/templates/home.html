@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Калькулятор</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="background-color: #9eb9e8">
+  <p th:text="${name}" /><br>
+
+  <form>
+    <input name="variable1" type="number" value="0"/>
+    <select name="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input name="variable2" type="number" value="0"/><br>
+    <input type="submit" name="submit1" value="Result(Post)" formmethod="post" formaction="/resultPost"/>
+    <input type="submit" name="submit2" value="Result(Get)" formmethod="get" formaction="/resultGet"/>
+  </form>
+</body>
+</html>
